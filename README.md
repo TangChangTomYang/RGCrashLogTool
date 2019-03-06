@@ -17,4 +17,4 @@ NSString *log = [RGCrashLogTool crashLog];
 
 **3. 函数的调用, 与函数调用栈的关系**
 
-![](image/001.png)
+![](images/001.png)
