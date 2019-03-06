@@ -119,8 +119,7 @@ void crashExceptionHandler(NSException *exception){
     // 将数据写入文件
     [[RGCrashLogTool shareTool].outputStream write:logMsgData.bytes maxLength:logMsgData.length];
     [[RGCrashLogTool shareTool].outputStream close];
-   
-    
+    [RGCrashLogTool shareTool].outputStream = nil; 
 }
 
 /**

@@ -18,8 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [RGCrashLogTool startMonitor];
-    
-    RGCrashLogTool
+ 
     
     return YES;
 }
