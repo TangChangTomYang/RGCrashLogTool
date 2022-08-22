@@ -6,11 +6,17 @@
 //  Copyright © 2022 yangrui. All rights reserved.
 //
 
-#import "RGDetectTool.h"
+#import "RGDetectCrashManagerTool.h"
 #import <UIKit/UIKit.h>
 #import "RGCrashLogTool.h"
+#import "RGDisplayCrashView.h"
 
-@implementation RGDetectTool
+
+
+
+
+
+@implementation RGDetectCrashManagerTool
 + (void)load{
     [RGCrashLogTool startMonitor];
      
@@ -20,18 +26,14 @@
         NSString *log = [RGCrashLogTool crashLog];
         
         if (log.length) {
+             
             NSLog(@"检测到crash 信息");
-            CGFloat width = [UIScreen mainScreen].bounds.size.width;
-            CGFloat height = [UIScreen mainScreen].bounds.size.height - 200;
-            CGRect frame = CGRectMake(10, 100, width, height);
-            UITextView *textView = [[UITextView alloc] initWithFrame:frame];
-            textView.backgroundColor = [UIColor orangeColor];
-            textView.text = log;
-            [[UIApplication sharedApplication].keyWindow addSubview:textView];
+            [RGDisplayCrashView showCrashInfo:log
+                                       inView:[UIApplication sharedApplication].keyWindow];;
             [RGCrashLogTool clearCrashLog];
         }
         else{
-            NSLog(@"云心正常");
+            NSLog(@"运行正常");
         }
         
     });
