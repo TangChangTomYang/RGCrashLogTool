@@ -21,6 +21,14 @@
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
+    {
+        NSNumber *num = @(1);
+        NSString *str = (NSString *)num;
+        str.length;
+        
+    }
+    
+    
     [self test1:^{
        id a = @[][10];
         a = nil;;

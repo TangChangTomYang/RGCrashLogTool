@@ -10,6 +10,8 @@
 		14AF441928B3368200A04148 /* RGDetectCrashManagerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AF441728B3368200A04148 /* RGDetectCrashManagerTool.m */; };
 		14AF441C28B3379600A04148 /* RGDisplayCrashView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AF441B28B3379600A04148 /* RGDisplayCrashView.m */; };
 		14AF441E28B337B200A04148 /* RGDisplayCrashView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14AF441D28B337B200A04148 /* RGDisplayCrashView.xib */; };
+		14AF442A28B382C800A04148 /* NSNumber+lenght.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AF442928B382C800A04148 /* NSNumber+lenght.m */; };
+		14AF442D28B387E000A04148 /* NumberLengthTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AF442C28B387E000A04148 /* NumberLengthTool.m */; };
 		14D75A28222F9A7600AE5428 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D75A27222F9A7600AE5428 /* AppDelegate.m */; };
 		14D75A2B222F9A7600AE5428 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D75A2A222F9A7600AE5428 /* ViewController.m */; };
 		14D75A2E222F9A7600AE5428 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14D75A2C222F9A7600AE5428 /* Main.storyboard */; };
@@ -25,6 +27,10 @@
 		14AF441A28B3379600A04148 /* RGDisplayCrashView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RGDisplayCrashView.h; sourceTree = "<group>"; };
 		14AF441B28B3379600A04148 /* RGDisplayCrashView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RGDisplayCrashView.m; sourceTree = "<group>"; };
 		14AF441D28B337B200A04148 /* RGDisplayCrashView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RGDisplayCrashView.xib; sourceTree = "<group>"; };
+		14AF442828B382C800A04148 /* NSNumber+lenght.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNumber+lenght.h"; sourceTree = "<group>"; };
+		14AF442928B382C800A04148 /* NSNumber+lenght.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+lenght.m"; sourceTree = "<group>"; };
+		14AF442B28B387E000A04148 /* NumberLengthTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumberLengthTool.h; sourceTree = "<group>"; };
+		14AF442C28B387E000A04148 /* NumberLengthTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NumberLengthTool.m; sourceTree = "<group>"; };
 		14D75A23222F9A7600AE5428 /* RGCrashLogTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RGCrashLogTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14D75A26222F9A7600AE5428 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		14D75A27222F9A7600AE5428 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -73,6 +79,8 @@
 				14D75A27222F9A7600AE5428 /* AppDelegate.m */,
 				14D75A29222F9A7600AE5428 /* ViewController.h */,
 				14D75A2A222F9A7600AE5428 /* ViewController.m */,
+				14AF442828B382C800A04148 /* NSNumber+lenght.h */,
+				14AF442928B382C800A04148 /* NSNumber+lenght.m */,
 				14D75A3C222F9A8700AE5428 /* class */,
 				14D75A2C222F9A7600AE5428 /* Main.storyboard */,
 				14D75A2F222F9A7700AE5428 /* Assets.xcassets */,
@@ -86,6 +94,8 @@
 		14D75A3C222F9A8700AE5428 /* class */ = {
 			isa = PBXGroup;
 			children = (
+				14AF442B28B387E000A04148 /* NumberLengthTool.h */,
+				14AF442C28B387E000A04148 /* NumberLengthTool.m */,
 				14D75A3D222F9B7400AE5428 /* RGCrashLogTool.h */,
 				14D75A3E222F9B7400AE5428 /* RGCrashLogTool.m */,
 				14AF441828B3368200A04148 /* RGDetectCrashManagerTool.h */,
@@ -123,7 +133,7 @@
 		14D75A1B222F9A7600AE5428 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1340;
 				ORGANIZATIONNAME = yangrui;
 				TargetAttributes = {
 					14D75A22222F9A7600AE5428 = {
@@ -168,11 +178,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14AF442A28B382C800A04148 /* NSNumber+lenght.m in Sources */,
 				14D75A2B222F9A7600AE5428 /* ViewController.m in Sources */,
 				14D75A3F222F9B7400AE5428 /* RGCrashLogTool.m in Sources */,
 				14AF441C28B3379600A04148 /* RGDisplayCrashView.m in Sources */,
 				14D75A36222F9A7700AE5428 /* main.m in Sources */,
 				14AF441928B3368200A04148 /* RGDetectCrashManagerTool.m in Sources */,
+				14AF442D28B387E000A04148 /* NumberLengthTool.m in Sources */,
 				14D75A28222F9A7600AE5428 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,6 +237,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -284,6 +297,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
