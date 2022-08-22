@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14AF441928B3368200A04148 /* RGDetectTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AF441728B3368200A04148 /* RGDetectTool.m */; };
 		14D75A28222F9A7600AE5428 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D75A27222F9A7600AE5428 /* AppDelegate.m */; };
 		14D75A2B222F9A7600AE5428 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D75A2A222F9A7600AE5428 /* ViewController.m */; };
 		14D75A2E222F9A7600AE5428 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14D75A2C222F9A7600AE5428 /* Main.storyboard */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14AF441728B3368200A04148 /* RGDetectTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGDetectTool.m; sourceTree = "<group>"; };
+		14AF441828B3368200A04148 /* RGDetectTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGDetectTool.h; sourceTree = "<group>"; };
 		14D75A23222F9A7600AE5428 /* RGCrashLogTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RGCrashLogTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14D75A26222F9A7600AE5428 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		14D75A27222F9A7600AE5428 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -79,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				14D75A3D222F9B7400AE5428 /* RGCrashLogTool.h */,
+				14AF441828B3368200A04148 /* RGDetectTool.h */,
+				14AF441728B3368200A04148 /* RGDetectTool.m */,
 				14D75A3E222F9B7400AE5428 /* RGCrashLogTool.m */,
 			);
 			path = class;
@@ -157,6 +162,7 @@
 				14D75A2B222F9A7600AE5428 /* ViewController.m in Sources */,
 				14D75A3F222F9B7400AE5428 /* RGCrashLogTool.m in Sources */,
 				14D75A36222F9A7700AE5428 /* main.m in Sources */,
+				14AF441928B3368200A04148 /* RGDetectTool.m in Sources */,
 				14D75A28222F9A7600AE5428 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

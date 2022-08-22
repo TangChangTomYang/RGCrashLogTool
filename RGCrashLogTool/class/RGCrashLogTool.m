@@ -32,8 +32,7 @@ static RGCrashLogTool *_crashLogTool = nil;
  开启监听/ 收集系统的崩溃日志
  */
 +(void)startMonitor{
-    
-       [self  setCrashLogHandler];
+    [self  setCrashLogHandler];
 }
 
 /**
@@ -41,7 +40,6 @@ static RGCrashLogTool *_crashLogTool = nil;
  */
 +(NSString *)crashLog{
     if( !isCrashLogFileExists()) return nil;
-    
     NSString *path = fetchCrashLogFilePath();
     return  [NSString stringWithContentsOfURL:[NSURL fileURLWithPath:path] encoding:NSUTF8StringEncoding error:nil];
 }
@@ -62,10 +60,9 @@ static RGCrashLogTool *_crashLogTool = nil;
 // 沙盒地址
 NSString *fetchCrashLogFilePath(){
     
-//    NSString *path = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
-        NSString *path = @"/Users/yangrui/Desktop/";
+    NSString *path = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
     NSString *appName = [[NSBundle mainBundle] infoDictionary][@"CFBundleName"];
-    NSString *fileName = [NSString stringWithFormat:@"%@.txt", appName];
+    NSString *fileName = [NSString stringWithFormat:@"%@_crash.txt", appName];
     return  [path stringByAppendingPathComponent:fileName];
     
 }
